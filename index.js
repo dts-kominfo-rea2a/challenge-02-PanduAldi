@@ -34,13 +34,38 @@ function lakukanLooping(arrPegawai) {
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
   */
-  let jumlahPria = dataYangAkanDilooping.filter(value => value.jenisKelamin === "M").length;
+  indexArrayPria = 0;
+  arrayJenisKelaminPria = [];
+  while(indexArrayPria < dataYangAkanDilooping.length)
+  {
+      if(dataYangAkanDilooping[indexArrayPria].jenisKelamin === "M" )
+      {
+         arrayJenisKelaminPria.push(indexArrayPria);
+      } 
+      
+      indexArrayPria++;
+  }
+
+  //dataYangAkanDilooping.filter(value => value.jenisKelamin === "M").length (tidak dipakai)
+  let jumlahPria = arrayJenisKelaminPria.length;
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
       yang berisi jumlah wanita dari masing masing pegawai
   */
-  let jumlahWanita = dataYangAkanDilooping.filter(value => value.jenisKelamin === "F").length;
+  indexArrayWanita = 0;
+  arrayJenisKelaminWanita = [];
+  while(indexArrayWanita < dataYangAkanDilooping.length)
+  {
+      if(dataYangAkanDilooping[indexArrayWanita].jenisKelamin === "F" )
+      {
+         arrayJenisKelaminWanita.push(indexArrayWanita);
+      } 
+      
+      indexArrayWanita++;
+  }
+
+  let jumlahWanita = arrayJenisKelaminWanita.length;
 
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
