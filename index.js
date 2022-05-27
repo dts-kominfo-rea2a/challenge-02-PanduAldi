@@ -23,13 +23,13 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-  const arrResult = [];
+  const arrNamaPegawai = [];
   for (i = 0; i < arrPegawai.length; i++ )
   {
-    arrResult.push(dataYangAkanDilooping[i].namaDepan + " "+ dataYangAkanDilooping[i].namaBelakang);
+    arrNamaPegawai.push(dataYangAkanDilooping[i].namaDepan + " "+ dataYangAkanDilooping[i].namaBelakang);
   }
 
-  let hasilLooping = arrResult;
+  let hasilLooping = arrNamaPegawai;
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
